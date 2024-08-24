@@ -99,6 +99,28 @@ if sexo == 0:
 elif sexo == 1:
   if idade >= 20 and idade <= 39:
     if porcentagem_gordura <= 8:
-      print('')
+      print('porcentagem de gordura baixa')
+    elif porcentagem_gordura >= 8.1 and porcentagem_gordura <= 19.9:
+      print('Porcentagem de gordura adequada!')
+    else:
+      print('Porcentagem de gordura alta!')
+  elif idade >= 40 and idade <= 59:
+      if porcentagem_gordura <= 11.0:
+        print('Porcentagem de gordura baixa!')
+      elif porcentagem_gordura >= 11.1 and porcentagem_gordura <= 21.9:
+        print('Porcentagem de gordura adequada')
+      else:
+        print('Porcentagem de gordura alta')
+  elif idade >= 60 and idade <= 79:
+      if porcentagem_gordura <= 13:
+        print('Porcentagem de gordura baixa!')
+      elif porcentagem_gordura <= 13.1 and porcentagem_gordura <= 24.9:
+        print('Porcentagem de gordura adequada')
+      elif porcentagem_gordura > 25:
+        print('Porcentagem de gordura alta!')
+      else:
+        print('Dados inválidos ou nao conclusivos! por gentileza verifique os valores informados e tente novamente!')
+  else:
+    print('Dados inválidos ou nao conclusivos! por gentileza verifique os valores informados e tente novamente!')
 
 
